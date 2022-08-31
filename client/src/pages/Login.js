@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Layout from "../components/Layout";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -77,6 +77,7 @@ const Login = () => {
               >
                 Login
               </button>
+              <div className="text-violet-400 font-semibold text-center mt-1 hover:text-violet-500"><Link to="/register">Don't have an account ? Create one here</Link></div>
             </form>
           </div>
         </div>

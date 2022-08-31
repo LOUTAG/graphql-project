@@ -2,7 +2,7 @@ import { useState } from "react";
 import Layout from "../components/Layout";
 import { toast } from "react-toastify";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -76,6 +76,7 @@ const Register = () => {
                 onChange={(event) => setPassword(event.target.value)}
               />
               <button className="text-xl w-full bg-gray-200 hover:bg-violet-400 hover:text-white rounded shadow text-black tracking-tight font-semibold capitalize py-2" type="submit">Register</button>
+              <div className="text-violet-400 font-semibold text-center mt-1 hover:text-violet-500"><Link to="/login">Already have an account ? Sign in</Link></div>
             </form>
           </div>
         </div>

@@ -9,15 +9,7 @@ const Header = () => {
     {
       name: "Posts",
       path: "/posts",
-    },
-    {
-      name: "teach",
-      path: "/teach",
-    },
-    {
-      name: "discover",
-      path: "/discover",
-    },
+    }
   ];
   const onLogoutClick =()=>{
     localStorage.removeItem('userAuth');

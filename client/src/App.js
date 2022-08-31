@@ -9,9 +9,6 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import AddPost from "./pages/AddPost";
-import Learn from "./pages/Learn";
-import Teach from "./pages/Teach";
-import Discover from "./pages/Discover";
 import PostsPage from "./pages/PostsPage";
 
 const AuthRoute = ({children})=>{
@@ -29,9 +26,6 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/addpost" element={<AuthRoute><AddPost /></AuthRoute>} />
-          <Route path="/learn" element={<Learn />} />
-          <Route path="/teach" element={<Teach />} />
-          <Route path="/discover" element={<Discover />} />
           <Route path="/posts" element={<PostsPage />} />
           <Route path="*" element={<Home />} />
         </Routes>
